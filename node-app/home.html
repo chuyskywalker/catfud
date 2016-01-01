@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>FEED DA CATS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <style>
+        input { padding: 30px; height: 100px; width: 100px; }
+    </style>
+</head>
+<body>
+
+<input type=submit value="FEED 1" id="btn1" />
+<br/><br/>
+
+<input type=submit value="FEED 2" id="btn2" />
+<br/><br/>
+
+<input type=submit value="FEED 3" id="btn3" />
+<br/><br/>
+
+<script>
+function sendAmt(amt) {
+    httpRequest = new XMLHttpRequest();
+    httpRequest.open('GET', '/rotate/'+amt, true);
+    httpRequest.send(null);
+}
+
+document.getElementById('btn1').onclick = function(){sendAmt(1)};
+document.getElementById('btn2').onclick = function(){sendAmt(2)};
+document.getElementById('btn3').onclick = function(){sendAmt(3)};
+
+</script>
+
+</body>
+</html>

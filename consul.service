@@ -1,0 +1,11 @@
+[Unit]
+Description=consul
+After=syslog.target network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/consul-agent.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

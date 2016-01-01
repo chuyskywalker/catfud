@@ -1,0 +1,17 @@
+{
+  "name": "cat-feed",
+  "version": "0.0.0",
+  "description": "feed yo cats",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "~1.14.2",
+    "express": "~4.13.3",
+    "console-stamp": "~0.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeff Minard <jeff@jrm.cc>",
+  "license": "BSD-2-Clause"
+}
